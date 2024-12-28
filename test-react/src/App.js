@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Test from './test.conf'
+console.log(Test)
 function App() {
   return (
     <div className="App">

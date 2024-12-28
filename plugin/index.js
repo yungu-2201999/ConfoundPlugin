@@ -17,6 +17,7 @@ class ConfoundPlugin {
       for (const [filename, stat] of Object.entries(assets)) {
         content += `${filename}    ${stat.size()}\r\n`;
       }
+      console.log(this.filename)
       assets[this.filename] = {
         source() {
           return content;

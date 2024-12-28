@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "loader-utils": "^3.3.1",
+    "schema-utils": "^4.3.0"
+  }
 }

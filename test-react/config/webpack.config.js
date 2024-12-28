@@ -526,6 +526,15 @@ module.exports = function (webpackEnv) {
               // See https://github.com/webpack/webpack/issues/6571
               sideEffects: true,
             },
+            {
+              test: /\.conf$/,
+              use: [
+                {
+                  loader: path.resolve('../../loader.js'),
+                  options: {},
+                }
+              ]
+            },
             // Adds support for CSS Modules, but using SASS
             // using the extension .module.scss or .module.sass
             {
